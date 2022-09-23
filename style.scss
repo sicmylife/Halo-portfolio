@@ -9,11 +9,13 @@
 body {
   background-color: rgb(14, 14, 14);
   font-family: "Abel", sans-serif;
+//   max-width: 1200px;
 }
 
 .container {
   height: 100vh;
   width: 100%;
+
   background: url("./Ellipse\ 6.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -129,8 +131,6 @@ li:hover{
     bottom: 0;
     left: 370px;
     transition: all 1s ease;
-  }
-  .img1:hover:hover{
   }
 
   .img2 {
@@ -556,4 +556,245 @@ li:hover{
       }
     
 
+     
+
+}
+
+@media (min-width: 1441px) {
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        // max-width: 1920px;
+        background: url("./Ellipse\ 6.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+         background-position:center ;
+        background-size:  2000px;
+        overflow: hidden;
+      
+        .logo {
+          position: block;
+          top: 30px;
+          left: 30px;
+      
+          img {
+            width: 40px;
+          }
+        }
+      
+        .title {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          color: white;
+          font-size: 12px;
+          z-index: 11;
+      
+          p {
+            font-size: 16px;
+          }
+      
+          span {
+            font-size: 18px;
+            color: #20e400;
+          }
+        }
+        .name {
+          position: absolute;
+          top: 30px;
+          right: 30px;
+          color: white;
+
+          display: none;
+      
+          span {
+            display: block;
+          }
+        }
+        .social{
+            position: absolute;
+            right: 50px;
+            top: 350px;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+        
+            img{
+                width: 30px;
+                opacity: .5;
+            }
+        
+            img:hover{
+                opacity: 1;
+            transform: scale(1.2);
+            transition: all 0.5s;
+        
+            }
+          }
+        
+      
+      
+
+
+        .burger{
+         
+          display: none;
+
+            
+             
+            
+        }
+
+        .close{
+            display: none;
+       
+
+        }
+
+        .img1 {
+            position: absolute;
+            width: 700px;
+            z-index: 10;
+            bottom: 0;
+            left: 500px;
+            transition: all 1s ease;
+        }
+       
+        .img2 {
+          position: absolute;
+          width: 600px;
+          top: 170px;
+          left: 600px;
+          z-index: 3;
+          animation: halo 2s linear infinite;
+          overflow: hidden;
+          display: block;
+
+
+        }
+      
+        .img3 {
+          position: absolute;
+          width: 720px;
+          top: 100px;
+          left: 540px;
+          z-index: 2;
+          transition: all 0.5s ease;
+          animation: halo2 2s linear infinite;
+          overflow: hidden;
+          display: block;
+        }
+      
+        .img4 {
+          position: absolute;
+          width: 150px;
+          top: 200px;
+          left: 100px;
+          z-index: 8;
+          transition: all 0.1s ease;
+          opacity: 0;
+      
+       
+      
+          // animation: halo2 2s linear infinite;
+        }
+      
+        .img4:hover{
+          opacity: .1;
+          // transform: scale(1.2);
+         
+      
+      }
+      
+      
+      
+        .img5 {
+          position: absolute;
+          width: 125px;
+          top: 290px;
+          left: 220px;
+          z-index: 8;
+          transition: all 0.1s ease;
+          opacity: 0;
+      
+          // animation: halo2 2s linear infinite;
+        }
+        .img6 {
+          position: absolute;
+          width: 95px;
+          top: 270px;
+          left: 320px;
+          z-index: 8;
+          transition: all 0.1s ease;
+          // animation: halo2 2s linear infinite;
+          opacity: 0;
+        }
+      
+      .img5:hover{
+          opacity: .2;
+         transform: scale(1.2);
+      
+      }
+      .img6:hover{
+          opacity: .2;
+          transform: scale(1.2);
+      
+      }
+      
+      .hide{
+          color: white;
+          font-size: 22px;
+          position: absolute;
+          top: 450px;
+          left: 130px;
+          display: none;
+          z-index: 5;
+      }
+      
+      
+      
+      
+      
+        @keyframes halo {
+          0% {
+            transform: translateY(0px);
+          }
+      
+          50% {
+            transform: translateY(20px);
+          //   transform: scale(1.2);
+      
+          }
+      
+         
+          100% {
+            transform: translateY(0px);
+          //   transform: scale(1);
+          }
+        }
+      
+        @keyframes halo2 {
+          0% {
+              transform: translateY(0px);
+       
+          opacity: 1;
+          }
+      
+          50% {
+              transform: translateY(20px);
+          
+          opacity: .1;
+      
+          }
+      
+         
+          100% {
+            transform: translateY(0px);
+      
+          opacity: 1;
+          }
+        }
+      }
+    
 }
