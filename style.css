@@ -279,6 +279,7 @@ body {
 
 @media (max-width: 768px) {
   .container {
+    height: 100vh;
     width: 100%;
     max-width: 370px;
     background: url("./Ellipse 6.png");
@@ -324,21 +325,8 @@ body {
   .container .social {
     position: absolute;
     right: 30px;
-    bottom: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 20px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    top: 800px;
+    display: block;
     z-index: 4;
   }
   .container .social img {
