@@ -268,4 +268,257 @@ body {
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 370px;
+    background: url("./Ellipse 6.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 500px;
+    overflow: hidden;
+  }
+  .container .logo {
+    position: block;
+    top: 30px;
+    left: 30px;
+  }
+  .container .logo img {
+    width: 40px;
+  }
+  .container .title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 12px;
+    z-index: 11;
+  }
+  .container .title p {
+    font-size: 16px;
+  }
+  .container .title span {
+    font-size: 18px;
+    color: #20e400;
+  }
+  .container .name {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
+  }
+  .container .name span {
+    display: block;
+  }
+  .container .social {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 4;
+  }
+  .container .social img {
+    width: 30px;
+    opacity: .5;
+  }
+  .container .social img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .container .nav-bar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #20e400;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    padding-top: 100px;
+    display: block;
+    z-index: 5;
+  }
+  .container .nav-bar ul li {
+    display: block;
+    margin-left: 0;
+    opacity: .5;
+    padding-bottom: 20px;
+    font-size: 32px;
+  }
+  .container .nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  .container .nav-bar li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    opacity: 1;
+  }
+  .container .img1 {
+    position: absolute;
+    width: 800px;
+    z-index: 2;
+    bottom: 0;
+    left: -220px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .container .img2 {
+    position: absolute;
+    width: 500px;
+    top: 170px;
+    left: -60px;
+    z-index: 3;
+    -webkit-animation: halo 2s linear infinite;
+            animation: halo 2s linear infinite;
+    overflow: hidden;
+    display: none;
+  }
+  .container .img3 {
+    position: absolute;
+    width: 580px;
+    top: 140px;
+    left: -100px;
+    z-index: 2;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-animation: halo2 2s linear infinite;
+            animation: halo2 2s linear infinite;
+    overflow: hidden;
+    display: none;
+  }
+  .container .img4 {
+    position: absolute;
+    width: 150px;
+    top: 200px;
+    left: 100px;
+    z-index: 8;
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    opacity: 0;
+  }
+  .container .img4:hover {
+    opacity: .1;
+  }
+  .container .img5 {
+    position: absolute;
+    width: 125px;
+    top: 290px;
+    left: 220px;
+    z-index: 8;
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    opacity: 0;
+  }
+  .container .img6 {
+    position: absolute;
+    width: 95px;
+    top: 270px;
+    left: 320px;
+    z-index: 8;
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    opacity: 0;
+  }
+  .container .img5:hover {
+    opacity: .2;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .container .img6:hover {
+    opacity: .2;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .container .hide {
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 450px;
+    left: 130px;
+    display: none;
+    z-index: 5;
+  }
+  @-webkit-keyframes halo {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @keyframes halo {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @-webkit-keyframes halo2 {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      opacity: 1;
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+      opacity: .1;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes halo2 {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      opacity: 1;
+    }
+    50% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+      opacity: .1;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}
 /*# sourceMappingURL=style.css.map */
