@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(14, 14, 14);
+  font-family: "Abel", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: url("./Ellipse\ 6.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -450px -660px;
+  background-size: 2300px;
+  //  background-position: -350px -630px;
+  // bac   overflow: hidden;kground-size: 2500px;  1920px
+  overflow: hidden;
+
+  .logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .title {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    font-size: 12px;
+
+    p {
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 18px;
+      color: #20e400;
+    }
+  }
+  .name {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: white;
+
+    span {
+      display: block;
+    }
+  }
+
+  .social{
+    position: absolute;
+    right: 50px;
+    top: 350px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+    img{
+        width: 30px;
+        opacity: .5;
+    }
+
+    img:hover{
+        opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.5s;
+
+    }
+  }
+
+  .nav-bar{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+ul{
+    li{
+        display: inline-block;
+        margin-left: 2rem;
+        opacity: .5;
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+}
+
+li:hover{
+
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+    opacity: 1;
+
+}
+
+
+  }
+
+  .img1 {
+    position: absolute;
+    width: 500px;
+    z-index: 10;
+    bottom: 0;
+    left: 370px;
+    transition: all 1s ease;
+  }
+  .img1:hover:hover{
+  }
+
+  .img2 {
+    position: absolute;
+    width: 500px;
+    top: 170px;
+    left: 420px;
+    z-index: 9;
+    animation: halo 2s linear infinite;
+  }
+
+  .img3 {
+    position: absolute;
+    width: 600px;
+    top: 120px;
+    left: 370px;
+    z-index: 8;
+    transition: all 0.5s ease;
+    animation: halo2 2s linear infinite;
+  }
+
+  .img4 {
+    position: absolute;
+    width: 150px;
+    top: 200px;
+    left: 100px;
+    z-index: 8;
+    transition: all 0.1s ease;
+    opacity: 0;
+
+ 
+
+    // animation: halo2 2s linear infinite;
+  }
+
+  .img4:hover{
+    opacity: .1;
+    // transform: scale(1.2);
+   
+
+}
+
+
+
+  .img5 {
+    position: absolute;
+    width: 125px;
+    top: 290px;
+    left: 220px;
+    z-index: 8;
+    transition: all 0.1s ease;
+    opacity: 0;
+
+    // animation: halo2 2s linear infinite;
+  }
+  .img6 {
+    position: absolute;
+    width: 95px;
+    top: 270px;
+    left: 320px;
+    z-index: 8;
+    transition: all 0.1s ease;
+    // animation: halo2 2s linear infinite;
+    opacity: 0;
+  }
+
+.img5:hover{
+    opacity: .2;
+   transform: scale(1.2);
+
+}
+.img6:hover{
+    opacity: .2;
+    transform: scale(1.2);
+
+}
+
+.hide{
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 450px;
+    left: 130px;
+    display: none;
+    z-index: 5;
+}
+
+// .hide:hover{
+//     display: block;
+// }
+
+// .skew{
+//     width: 150px;
+//     height: 150px;
+//     background-color: #414141;
+//     position: absolute;
+//     top: 300px;
+//     left: 150px;
+    
+//     transform: skew(50deg ,10deg);
+//     opacity: 0   ;
+    
+// }
+
+// .skew:hover{
+//     opacity: 1;
+// }
+
+
+
+  @keyframes halo {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(20px);
+    //   transform: scale(1.2);
+
+    }
+
+   
+    100% {
+      transform: translateY(0px);
+    //   transform: scale(1);
+    }
+  }
+
+  @keyframes halo2 {
+    0% {
+        transform: translateY(0px);
+ 
+    opacity: 1;
+    }
+
+    50% {
+        transform: translateY(20px);
+    
+    opacity: .1;
+
+    }
+
+   
+    100% {
+      transform: translateY(0px);
+
+    opacity: 1;
+    }
+  }
+}
+
