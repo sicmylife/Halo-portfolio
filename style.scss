@@ -15,14 +15,12 @@ body {
 .container {
   height: 100vh;
   width: 100%;
-
   background: url("./Ellipse\ 6.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: -450px -660px;
   background-size: 2300px;
-  //  background-position: -350px -630px;
-  // bac   overflow: hidden;kground-size: 2500px;  1920px
+
   overflow: hidden;
 
   .logo {
@@ -268,15 +266,13 @@ li:hover{
 
     .container {
         // height: 100vh;
-        // width: 100%;
+        // width: 400px;
         max-width: 400px;
         background: url("./Ellipse\ 6.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
         background-size: 400px;
-        //  background-position: -350px -630px;
-        // bac   overflow: hidden;kground-size: 2500px;  1920px
         overflow: hidden;
       
         .logo {
@@ -422,12 +418,13 @@ li:hover{
         .img1 {
           position: absolute;
           height: 650px;
-         max-width: 400px;
+         width: 400px;
           z-index: 2;
           bottom: -100px;
           left: -50px;
           transition: all 1s ease;
           overflow:hidden ;
+          // display: none;
         }
        
         .img2 {

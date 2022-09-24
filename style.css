@@ -398,7 +398,7 @@ body {
   .container .img1 {
     position: absolute;
     height: 650px;
-    max-width: 400px;
+    width: 400px;
     z-index: 2;
     bottom: -100px;
     left: -50px;
