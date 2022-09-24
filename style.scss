@@ -267,14 +267,14 @@ li:hover{
 @media (max-width: 768px) {
 
     .container {
-        height: 100vh;
-        width: 100%;
-        max-width: 370px;
+        // height: 100vh;
+        // width: 100%;
+        max-width: 400px;
         background: url("./Ellipse\ 6.png");
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center;
-        background-size: 500px;
+        background-position: center center;
+        background-size: 400px;
         //  background-position: -350px -630px;
         // bac   overflow: hidden;kground-size: 2500px;  1920px
         overflow: hidden;
@@ -291,11 +291,11 @@ li:hover{
       
         .title {
           position: absolute;
-          bottom: 20px;
-          left: 20px;
+          top: 400px;
+          left: 120px;
           color: white;
           font-size: 12px;
-          z-index: 11;
+          z-index: 5;
       
           p {
             font-size: 16px;
@@ -308,8 +308,8 @@ li:hover{
         }
         .name {
           position: absolute;
-          top: 30px;
-          right: 30px;
+          top: 300px;
+          right: 100px;
           color: white;
 
           display: none;
@@ -321,7 +321,7 @@ li:hover{
       
         .social{
           position: absolute;
-          right: 30px;
+          right: 100px;
           top: 800px;
           display: block;
         //   flex-direction: row;
@@ -329,6 +329,11 @@ li:hover{
         //   align-items: flex-end;
         //   justify-content: center;
           z-index: 4;
+
+          a{
+            margin-left: .3rem;
+
+          }
       
           img{
               width: 30px;
@@ -338,18 +343,18 @@ li:hover{
           img:hover{
               opacity: 1;
           transform: scale(1.2);
-          transition: all 0.5s;
+          transition: all 0.3s;
       
           }
         }
       
         .nav-bar{
-          position: absolute;
+          position: fixed;
           top: 0px;
           right: 0px;
           background-color: #20e400;
           width: 100%;
-          height: 80%;
+          height: 100%;
           text-align: center;
           padding-top: 100px;
           z-index: 5;
@@ -358,11 +363,16 @@ li:hover{
           li{
               display: block;
               margin-left: 0;
-              opacity: .5;
+              opacity: 1;
               padding-bottom: 20px;
               font-size: 32px;
+              margin-bottom: 1rem;
               
               a{
+                background-color: rgba(251, 250, 248,.4);
+                padding: 10px 20px;
+                border-radius: 5px;
+            
                   text-decoration: none;
                   color: white;
               }
@@ -411,12 +421,13 @@ li:hover{
       
         .img1 {
           position: absolute;
-          width: 500px;
           height: 650px;
+         max-width: 400px;
           z-index: 2;
-          bottom: 0;
-          left: -120px;
+          bottom: -100px;
+          left: -50px;
           transition: all 1s ease;
+          overflow:hidden ;
         }
        
         .img2 {
