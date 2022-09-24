@@ -125,16 +125,16 @@ body {
   width: 500px;
   z-index: 10;
   bottom: 0;
-  left: 370px;
+  left: 320px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
 .container .img2 {
   position: absolute;
-  width: 500px;
-  top: 130px;
-  left: 400px;
+  width: 550px;
+  top: 70px;
+  left: 350px;
   z-index: 9;
   -webkit-animation: halo 2s linear infinite;
           animation: halo 2s linear infinite;
@@ -142,9 +142,9 @@ body {
 
 .container .img3 {
   position: absolute;
-  width: 600px;
-  top: 80px;
-  left: 350px;
+  width: 650px;
+  top: 20px;
+  left: 300px;
   z-index: 8;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -626,7 +626,7 @@ body {
     width: 700px;
     z-index: 10;
     bottom: 0;
-    left: 500px;
+    left: 600px;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
   }
@@ -634,7 +634,7 @@ body {
     position: absolute;
     width: 650px;
     top: 130px;
-    left: 580px;
+    left: 680px;
     z-index: 3;
     -webkit-animation: halo 2s linear infinite;
             animation: halo 2s linear infinite;
@@ -645,7 +645,7 @@ body {
     position: absolute;
     width: 770px;
     top: 60px;
-    left: 520px;
+    left: 620px;
     z-index: 2;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
