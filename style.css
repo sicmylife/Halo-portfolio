@@ -133,8 +133,8 @@ body {
 .container .img2 {
   position: absolute;
   width: 500px;
-  top: 170px;
-  left: 420px;
+  top: 130px;
+  left: 400px;
   z-index: 9;
   -webkit-animation: halo 2s linear infinite;
           animation: halo 2s linear infinite;
@@ -143,8 +143,8 @@ body {
 .container .img3 {
   position: absolute;
   width: 600px;
-  top: 120px;
-  left: 370px;
+  top: 80px;
+  left: 350px;
   z-index: 8;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -559,33 +559,34 @@ body {
   }
   .container .logo {
     position: block;
-    top: 30px;
-    left: 30px;
+    top: 50px;
+    left: 50px;
   }
   .container .logo img {
-    width: 40px;
+    width: 60px;
   }
   .container .title {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 25px;
+    left: 50px;
     color: white;
-    font-size: 12px;
+    font-size: 20px;
     z-index: 11;
   }
   .container .title p {
-    font-size: 16px;
+    font-size: 20px;
   }
   .container .title span {
-    font-size: 18px;
+    font-size: 22px;
     color: #20e400;
   }
   .container .name {
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 50px;
     color: white;
-    display: none;
+    font-size: 20px;
+    display: block;
   }
   .container .name span {
     display: block;
@@ -593,7 +594,7 @@ body {
   .container .social {
     position: absolute;
     right: 50px;
-    top: 350px;
+    top: 360px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -604,7 +605,7 @@ body {
     gap: 20px;
   }
   .container .social img {
-    width: 30px;
+    width: 40px;
     opacity: .5;
   }
   .container .social img:hover {
@@ -631,9 +632,9 @@ body {
   }
   .container .img2 {
     position: absolute;
-    width: 600px;
-    top: 170px;
-    left: 600px;
+    width: 650px;
+    top: 130px;
+    left: 580px;
     z-index: 3;
     -webkit-animation: halo 2s linear infinite;
             animation: halo 2s linear infinite;
@@ -642,9 +643,9 @@ body {
   }
   .container .img3 {
     position: absolute;
-    width: 720px;
-    top: 100px;
-    left: 540px;
+    width: 770px;
+    top: 60px;
+    left: 520px;
     z-index: 2;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
