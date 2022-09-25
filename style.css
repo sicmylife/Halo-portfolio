@@ -49,6 +49,60 @@ body {
   color: #20e400;
 }
 
+.container .dot {
+  position: absolute;
+  bottom: 120px;
+  left: 20px;
+}
+
+.container .dot img {
+  width: 2px;
+}
+
+.container .dot1 {
+  -webkit-animation: animation 4.1s linear infinite;
+          animation: animation 4.1s linear infinite;
+  left: 50px;
+}
+
+.container .dot2 {
+  -webkit-animation: animation 1.6s linear infinite;
+          animation: animation 1.6s linear infinite;
+  left: 60px;
+}
+
+.container .dot3 {
+  -webkit-animation: animation 2.2s linear infinite;
+          animation: animation 2.2s linear infinite;
+  left: 70px;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+}
+
 .container .name {
   position: absolute;
   top: 50px;

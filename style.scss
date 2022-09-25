@@ -33,6 +33,7 @@ body {
     }
   }
 
+
   .title {
     position: absolute;
     bottom: 50px;
@@ -49,6 +50,44 @@ body {
       color: #20e400;
     }
   }
+
+  .dot{
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    img{
+      width: 2px;
+    }
+
+  }
+  .dot1{
+    animation: animation 4.1s linear infinite;
+    left: 50px;
+  }
+
+  .dot2{
+    animation: animation 1.6s linear infinite;
+    left: 60px;
+
+  }
+  .dot3{
+    animation: animation 2.2s linear infinite;
+    left: 70px;
+
+  }
+  @keyframes animation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+
+  100% {
+opacity: 1;
+transform: translateY(-200px);
+
+  }
+}
+
   .name {
     position: absolute;
     top: 50px;
