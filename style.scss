@@ -295,9 +295,29 @@ li:hover{
     //   transform: scale(1);
     }
   }
-
+.under{
+  position: absolute;
+  font-size: 32px;
+  color: rgb(237, 46, 78);
+  top: 200px;
+  left: 100px;
+  font-weight: 900;
+  z-index: 100;
+}
   
 }
+
+.contact{
+ content: "";
+ position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #20e400;
+  z-index: 9999;
+  opacity: .5;
+
+}
+
 
 
 @media (max-width: 768px) {
@@ -355,8 +375,8 @@ li:hover{
       
         .social{
           position: absolute;
-          right: 100px;
-          top: 700px;
+          right: 150px;
+          top: 500px;
           display: block;
           z-index: 4;
 
@@ -451,11 +471,11 @@ li:hover{
       
         .img1 {
           position: absolute;
-          height: 650px;
+          height: 550px;
          width: 400px;
           z-index: 2;
-          bottom: 1px;
-          left: -50px;
+          bottom: 0px;
+          left: 0px;
           transition: all 1s ease;
           overflow:hidden ;
           // display: none;
