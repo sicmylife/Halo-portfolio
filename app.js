@@ -3,6 +3,8 @@ const burger = document.querySelector(".burger");
 const close1 = document.querySelector(".close");
 const contact = document.querySelector("#contact");
 const overlay = document.querySelector(".overlay");
+const overlay2 = document.querySelector(".overlay2");
+const about = document.querySelector("#about");
 
 
 burger.addEventListener("click", function (e) {
@@ -18,6 +20,9 @@ close1.addEventListener("click", function (e) {
   // closing overlay contact
   overlay.style.display = "none";
   close1.classList.remove("active");
+    // closing overlay about
+    overlay2.style.display = "none";
+    close1.classList.remove("active");
 
 });
 
@@ -27,6 +32,12 @@ contact.addEventListener("click", function (e) {
 
   });
 
+
+  about.addEventListener("click", function (e) {
+    overlay2.style.display = "block";
+  close1.classList.add("active");
+
+  });
 
 
  

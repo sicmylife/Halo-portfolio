@@ -114,9 +114,6 @@ body {
 .container .burger {
   display: none;
 }
-.container .close {
-  display: none;
-}
 .container .nav-bar {
   position: absolute;
   bottom: 50px;
@@ -274,7 +271,7 @@ body {
   right: 20px;
   top: 30px;
   width: 30px;
-  z-index: 6;
+  z-index: 2;
   cursor: pointer;
 }
 
@@ -289,8 +286,8 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #1e1e1e;
-  z-index: 9999;
+  background-color: #707070;
+  z-index: 100;
   opacity: 1;
   color: #fff;
   display: flex;
@@ -302,7 +299,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 300px;
+  width: 330px;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #919191;
 }
 .overlay .overlay-contact .phone .phone-img img {
   width: 100px;
@@ -312,13 +313,17 @@ body {
   padding-bottom: 1rem;
 }
 .overlay .overlay-contact .phone .info p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .overlay .overlay-contact .email {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 300px;
+  width: 340px;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #919191;
 }
 .overlay .overlay-contact .email .email-img img {
   width: 100px;
@@ -328,7 +333,26 @@ body {
   padding-bottom: 1rem;
 }
 .overlay .overlay-contact .email .info p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.overlay2 {
+  display: none;
+}
+.overlay2 .overlay-about {
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("./images/Ellipse 6.png");
+  background-position: center;
+  background-color: #707070;
+  z-index: 50;
+  opacity: 1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 @media (max-width: 768px) {
@@ -449,7 +473,7 @@ body {
     right: 20px;
     top: 30px;
     width: 30px;
-    z-index: 6;
+    z-index: 120;
   }
   .container .nav-bar.active,
 .container .close.active {
@@ -586,18 +610,6 @@ body {
       opacity: 1;
     }
   }
-  .close {
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: 30px;
-    width: 30px;
-    z-index: 6;
-    cursor: pointer;
-  }
-  .close.active {
-    display: block;
-  }
   .overlay {
     display: none;
   }
@@ -608,7 +620,7 @@ body {
     background: url("./images/Ellipse 6.png");
     background-position: center;
     background-color: #1e1e1e;
-    z-index: 9999;
+    z-index: 100;
     opacity: 1;
     color: #fff;
     display: block;
@@ -618,14 +630,15 @@ body {
     -webkit-animation: about 0.1s ease-in forwards;
             animation: about 0.1s ease-in forwards;
     opacity: 0;
+    height: 100vh;
   }
   .overlay .overlay-contact .phone {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 20px;
     width: 300px;
-    margin: 100px 0 50px 0;
+    margin: 100px 100px 50px -40px;
     background-color: #919191;
     padding: 50px 30px;
     border-radius: 10px;
@@ -644,13 +657,14 @@ body {
   .overlay .overlay-contact .email {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 20px;
     width: 300px;
     padding: 50px 30px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #919191;
+    margin: 20px 100px 50px -40px;
   }
   .overlay .overlay-contact .email .email-img img {
     width: 40px;
@@ -697,6 +711,20 @@ body {
     font-size: 22px;
     color: #20e400;
   }
+  .container .nav-bar {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+  }
+  .container .nav-bar ul li {
+    display: inline-block;
+    margin-left: 2rem;
+    opacity: 0.5;
+  }
+  .container .nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+  }
   .container .name {
     position: absolute;
     top: 30px;
@@ -731,10 +759,10 @@ body {
   .container .close {
     display: none;
     position: absolute;
-    right: 20px;
+    right: 50px;
     top: 30px;
     width: 30px;
-    z-index: 6;
+    z-index: 120;
     cursor: pointer;
   }
   .container .close.active {
@@ -877,7 +905,7 @@ body {
     height: 100%;
     background-position: center;
     background-color: #707070;
-    z-index: 9999;
+    z-index: 99;
     color: #fff;
     display: flex;
     align-items: center;
@@ -927,6 +955,24 @@ body {
   }
   .overlay .overlay-contact .email .info p {
     font-size: 1.5rem;
+  }
+  .overlay2 {
+    display: none;
+  }
+  .overlay2 .overlay-about {
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("./images/Ellipse 6.png");
+    background-position: center;
+    background-color: #2d2c2c;
+    z-index: 99;
+    opacity: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 @-webkit-keyframes about {
