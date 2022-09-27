@@ -358,12 +358,13 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 400px;
+    max-width: 370px;
     background: url("./images/Ellipse\ 6.png");
+    background: url("./images/Ellipse\ 1.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
-    background-size: 400px;
+    background-size: 300px;
     overflow: hidden;
     height: 100vh;
 
@@ -417,7 +418,6 @@ body {
     }
 
     .social {
-      position: block;
       right: 100px;
       top: 600px;
       display: block;
@@ -509,7 +509,7 @@ body {
       left: 0px;
       transition: all 1s ease;
       overflow: hidden;
-      // display: none;
+      display: none;
     }
 
     .img2 {
