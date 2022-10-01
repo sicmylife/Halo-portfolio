@@ -26,6 +26,14 @@ close1.addEventListener("click", function (e) {
 
 });
 
+about.addEventListener("click", function (e) {
+  overlay2.style.display = "block";
+  close1.classList.add("active");
+
+
+
+});
+
 contact.addEventListener("click", function (e) {
     overlay.style.display = "block";
   close1.classList.add("active");
@@ -33,11 +41,7 @@ contact.addEventListener("click", function (e) {
   });
 
 
-  about.addEventListener("click", function (e) {
-    overlay2.style.display = "block";
-  close1.classList.add("active");
 
-  });
-
+ 
 
  
