@@ -1,34 +1,62 @@
 const nav = document.querySelector(".nav-bar");
 const burger = document.querySelector(".burger");
 const close1 = document.querySelector(".close");
+const close2 = document.querySelector(".close2");
+const close3 = document.querySelector(".close-menu");
 const contact = document.querySelector("#contact");
 const overlay = document.querySelector(".overlay");
 const overlay2 = document.querySelector(".overlay2");
 const about = document.querySelector("#about");
 
+console.log(close2);
 
 burger.addEventListener("click", function (e) {
   e.preventDefault();
   nav.classList.add("active");
-  close1.classList.add("active");
+  close3.classList.add("active");
+});
+
+close3.addEventListener("click", function (e) {
+  e.preventDefault();
+ 
+    // closing overlay about
+    nav.classList.remove("active");
+    close3.classList.remove("active");
+
 });
 
 close1.addEventListener("click", function (e) {
   e.preventDefault();
-  nav.classList.remove("active");
-  close1.classList.remove("active");
-  // closing overlay contact
+
   overlay.style.display = "none";
-  close1.classList.remove("active");
-    // closing overlay about
-    overlay2.style.display = "none";
-    close1.classList.remove("active");
+    close2.classList.remove("active");
+
+    nav.classList.remove("active");
+    close3.classList.remove("active");
+
+  // closing overlay contact
 
 });
 
+close2.addEventListener("click", function (e) {
+  e.preventDefault();
+ 
+    // closing overlay about
+    overlay2.style.display = "none";
+    close2.classList.remove("active");
+
+    nav.classList.remove("active");
+    close3.classList.remove("active");
+
+    // close about layer and nav layer
+
+});
+
+
+
 about.addEventListener("click", function (e) {
   overlay2.style.display = "block";
-  close1.classList.add("active");
+  close2.classList.add("active");
 
 
 
