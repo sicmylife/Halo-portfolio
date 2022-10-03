@@ -817,33 +817,32 @@ body {
     }
   
     .dot2 {
-      animation: dot 1s infinite ; 
+      animation: dot 8s cubic-bezier(0.455, 0.03, 0.515, 0.955)  infinite ; ; 
       top: 401px;
       opacity: 1;
       content: '';
-      height: 2px;
-      width: 8px;
-      background-color: transparent;
-      border: #20e400 solid .6px;
+      height: 20px;
+      width: 20px;
+      background-color:#20e400;
+      // border: #232423 solid .1px;
       border-radius: 50%;
       left: 176px;
       overflow: hidden;
       position: absolute;
-      
     }
   
     @keyframes dot {
       0% {
-        opacity: 1;
+      opacity: 1;
       
-        // transform: scale(0);
+        transform: scale(0);
   
       }
   
       100% {
-        opacity: 0;
+        opacity: 1;
      
-        // transform: scale(1);
+        transform: scale(15);
   
       }
     }
@@ -853,17 +852,25 @@ body {
       position: absolute;
       top: 350px;
       left: 120px;
-      color: white;
+      color: #181818;
       font-size: 14px;
       z-index: 5;
 
+
+      h1{
+        color: #ffffff;
+
+      }
       p {
         font-size: 16px;
+        color: #0d0d0d;
+
       }
 
       span {
         font-size: 18px;
-        color: #20e400;
+        color: #0d0d0d;
+
       }
     }
     .name {
@@ -881,7 +888,7 @@ body {
 
     .social {
       right: 100px;
-      top: 600px;
+      top: 620px;
       display: block;
       z-index: 4;
 
