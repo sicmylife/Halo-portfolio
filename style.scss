@@ -784,7 +784,7 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 370px;
+    max-width: 420px;
     background-image:  url("./images/8.svg");
     background-repeat: no-repeat;
     background-size: cover,cover;
@@ -817,7 +817,7 @@ body {
     }
   
     .dot2 {
-      animation: dot 8s cubic-bezier(0.455, 0.03, 0.515, 0.955)  infinite ; ; 
+      animation: dot 12s cubic-bezier(0.455, 0.03, 0.515, 0.955)  infinite ; ; 
       top: 401px;
       opacity: 1;
       content: '';
@@ -842,7 +842,7 @@ body {
       100% {
         opacity: 1;
      
-        transform: scale(15);
+        transform: scale(17);
   
       }
     }
@@ -888,7 +888,7 @@ body {
 
     .social {
       right: 100px;
-      top: 620px;
+      top: 610px;
       display: block;
       z-index: 4;
 
