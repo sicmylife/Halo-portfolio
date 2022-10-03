@@ -647,7 +647,7 @@ body {
     padding: 0 500px;
     -webkit-animation: about 0.1s ease-in forwards;
             animation: about 0.1s ease-in forwards;
-    opacity: 0;
+    opacity: 1;
   }
   .overlay .overlay-contact .phone {
     display: flex;
