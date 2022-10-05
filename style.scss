@@ -248,14 +248,19 @@ body {
   @keyframes halo2 {
     0% {
       transform: scale(1);
+      transform: rotate(0);
     }
 
     50% {
       transform: scale(3);
+      transform: rotate(180deg);
+
     }
 
     100% {
       transform: scale(1);
+      transform: rotate(360deg);
+
     }
   }
 
@@ -391,29 +396,58 @@ body {
 .overlay2 {
   display: none;
   z-index: 100;
+
   .overlay-about {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #707070;
+    // background-color: #707070;
     z-index: 100;
     opacity: 1;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 200px;
+    // padding: 0 200px;
+    background: url("./images/EllipseWhite.png");
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100px -200px;
+    background-size: 1200px;
+    overflow: hidden;
+
+    .zombi {
+      position: absolute;
+      width: 500px;
+      z-index: 10;
+      bottom: 0;
+      left: 360px;
+      transition: all 1s ease;
+    }
+  
+    .triangle{
+      position: absolute;
+      width: 550px;
+      top: 80px;
+      left: 380px;
+      z-index: 9;
+      // animation: halo 2s linear infinite;
+      animation: halo2 20s linear infinite ;
+      transform: scale(1);
+      transition: all 1s ease;
+    }
 
     .main-about-me {
-      display: flex;
+      // display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 630px;
+      width: 990px;
       min-height: 500px;
-      padding: 50px 30px;
-      border-radius: 10px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      background-color: #919191;
+      // padding: 50px 30px;
+      // border-radius: 10px;
+      // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      // background-color: #919191;
 
       .me-img {
         img {
@@ -423,12 +457,19 @@ body {
 
       .info {
         h2 {
-          font-size: 2rem;
+          font-size: 8rem;
           padding-bottom: 1rem;
+          color: #919191;
+          margin-left: 150px;
+          margin-top: -100px;
         }
 
         p {
-          font-size: 1.2rem;
+          font-size: 2rem;
+          color: #919191;
+          margin-left: 250px;
+
+
         }
       }
     }
@@ -786,10 +827,13 @@ body {
   .container {
     max-width: 420px;
     background-image:  url("./images/8.svg");
+    background-image:  url("./images/Polygon\ 1.png");
     background-repeat: no-repeat;
-    background-size: cover,cover;
-    background-position: -100px 10px;
-    background-size:650px 800px;
+    background-size: cover;
+    background-position: -20px 10px;
+    background-size:430px 400px;
+    // background-position: center;
+    // background-size:500px 500px;
     overflow: hidden;
     height: 100vh;
 
@@ -817,18 +861,21 @@ body {
     }
   
     .dot2 {
-      animation: dot 12s cubic-bezier(0.455, 0.03, 0.515, 0.955)  infinite ; ; 
+      animation: dot 12s cubic-bezier(0.455, 0.03, 0.515, 0.955);  
       top: 401px;
       opacity: 1;
       content: '';
       height: 20px;
       width: 20px;
-      background-color:#20e400;
+      background-color: transparent;
+      border: 5px solid #20e400;
       // border: #232423 solid .1px;
       border-radius: 50%;
-      left: 176px;
+      left: 190px;
       overflow: hidden;
       position: absolute;
+      z-index: -1;
+      transform: scale(20);
     }
   
     @keyframes dot {
@@ -842,7 +889,7 @@ body {
       100% {
         opacity: 1;
      
-        transform: scale(17);
+        transform: scale(20);
   
       }
     }
@@ -863,13 +910,13 @@ body {
       }
       p {
         font-size: 16px;
-        color: #0d0d0d;
+        color: #ffffff;
 
       }
 
       span {
         font-size: 18px;
-        color: #0d0d0d;
+        color: #ffffff;
 
       }
     }
