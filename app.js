@@ -68,6 +68,17 @@ contact.addEventListener("click", function (e) {
 
   });
 
+// gsap.from('.under',{y:'-100%',ease:'bounce'})
+  const tl = gsap.timeline({
+    default:{
+    }
+    
+  })
+  tl.from('.zombi',{y:'2000%', duration:1,ease:"rough"})
+  tl.from('.under',{y:'-300%', x:'-400px', duration:3,})
+
+ 
+
 
 
  
