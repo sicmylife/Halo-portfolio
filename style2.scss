@@ -28,6 +28,7 @@ body {
     a {
       transform: matrix(0.95, 0.14, -0.35, 0.99, 0, 0);
       transform: matrix(0.94, 0.11, -0.38, 0.99, 0, 0);
+
     }
 
     a:hover {
@@ -37,6 +38,8 @@ body {
 
     img {
       width: 100%;
+    border-radius: 10px;
+
     }
   }
 }
@@ -53,11 +56,11 @@ body {
       flex-direction: column;
       width: 400px;
       margin: 0 auto;
+    
 
       a {
         transform: none;
         display: flex;
-        // align-items: center;
         justify-content: center;
       }
 
@@ -68,6 +71,8 @@ body {
 
       img {
         width: 80%;
+    border-radius: 10px;
+
       }
     }
   }

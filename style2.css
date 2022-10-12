@@ -35,6 +35,7 @@ body {
 }
 .container .imagenes-grid img {
   width: 100%;
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
@@ -60,5 +61,6 @@ body {
   }
   .container .imagenes-grid img {
     width: 80%;
+    border-radius: 10px;
   }
 }/*# sourceMappingURL=style2.css.map */
