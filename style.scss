@@ -419,13 +419,15 @@ body {
     height: 100%;
     z-index: 100;
     opacity: 1;
-    color: rgb(164, 162, 162);
+    color: rgb(194, 194, 194);
     display: flex;
     align-items: center;
     justify-content: space-around;
     // padding: 0 200px;
     // background: url("./images/EllipseWhite.png");
     background-color: rgb(194, 194, 194);
+    background-color: #707070;
+
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100px -200px;
@@ -484,21 +486,23 @@ body {
           font-size: 4rem;
           font-weight: 900;
           padding-bottom: 1rem;
-          color: #919191;
+          color: #c5c5c5;
           // margin-left: 350px;
           // margin-top: -50px;
         }
         h3 {
           font-size: 3rem;
           padding-bottom: 1rem;
-          color: #919191;
+          color: #c5c5c5;
+
           // margin-left: 250px;
           // margin-top: -10px;
         }
 
         p {
           font-size: 2rem;
-          color: #919191;
+          color: #c5c5c5;
+
           // margin-left: 350px;
 
 
@@ -1353,6 +1357,7 @@ body {
             left: 50%;
             transform: translateX(-50%);
             top: 45 0px;
+            width: 90%;
 
             img{
               width: 100%;

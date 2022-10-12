@@ -11,8 +11,7 @@ body {
 }
 
 .container {
-  height: 200vh;
-  width: 100%;
+  width: 1440;
   background-color: #707070;
   padding: 300px 0;
 }
@@ -22,7 +21,7 @@ body {
   justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
-  width: 1400px;
+  width: 1350px;
   margin: 0 auto;
 }
 .container .imagenes-grid a {
@@ -36,6 +35,14 @@ body {
 .container .imagenes-grid img {
   width: 100%;
   border-radius: 10px;
+}
+.container .logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.container .logo img {
+  width: 50px;
 }
 
 @media (max-width: 768px) {
