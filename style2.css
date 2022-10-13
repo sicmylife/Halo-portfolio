@@ -15,7 +15,12 @@ body {
   background-color: #707070;
   padding: 300px 0;
 }
-.container .imagenes-grid {
+.container .box {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(248, 15, 53);
+}
+.container .grid {
   display: grid;
   align-items: center;
   justify-content: space-between;
@@ -24,15 +29,15 @@ body {
   width: 1350px;
   margin: 0 auto;
 }
-.container .imagenes-grid a {
+.container .grid a {
   transform: matrix(0.95, 0.14, -0.35, 0.99, 0, 0);
   transform: matrix(0.94, 0.11, -0.38, 0.99, 0, 0);
 }
-.container .imagenes-grid a:hover {
-  transform: none;
+.container .grid a:hover {
+  transform: scale(1.2);
   transition: ease-in 0.2s;
 }
-.container .imagenes-grid img {
+.container .grid img {
   width: 100%;
   border-radius: 10px;
 }
@@ -52,21 +57,30 @@ body {
     background-color: #707070;
     padding: 30px 0;
   }
-  .container .imagenes-grid {
+  .container .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .container .logo img {
+    width: 40px;
+  }
+  .container .grid {
     display: flex;
     flex-direction: column;
     width: 400px;
     margin: 0 auto;
+    padding-top: 50px;
   }
-  .container .imagenes-grid a {
+  .container .grid a {
     transform: none;
     display: flex;
     justify-content: center;
   }
-  .container .imagenes-grid a:hover {
+  .container .grid a:hover {
     transform: none;
   }
-  .container .imagenes-grid img {
+  .container .grid img {
     width: 80%;
     border-radius: 10px;
   }

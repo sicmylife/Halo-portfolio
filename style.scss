@@ -84,7 +84,7 @@ body {
 
   
   .dot1 {
-    animation: animation 4.1s linear ;
+    animation: animation 1s linear ;
     
   }
   
@@ -100,7 +100,7 @@ body {
     100% {
       opacity: 0;
    
-      transform: scale(400);
+      transform: scale(200);
 
     }
   }
@@ -1211,9 +1211,9 @@ body {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: url("./images/Ellipseblanca.png");
+        // background: url("./images/Ellipseblanca.png");
         background-position: center;
-        background-color: #1e1e1e;
+
         z-index: 100;
         opacity: 1;
         color: #fff;
@@ -1223,7 +1223,9 @@ body {
         padding: 75px;
         animation: about 0.1s ease-in forwards;
         opacity: 0;
-        height: 100vh;
+        // height: 100vh;
+    background-color: #707070;
+
         .phone {
           display: flex;
           align-items: center;
@@ -1300,6 +1302,8 @@ body {
         z-index: 100;
         opacity: 1;
         color: rgb(164, 162, 162);
+    background-color: #707070;
+
 
         .main-about-me {
          
@@ -1331,21 +1335,23 @@ body {
               font-size: 3rem;
               font-weight: 900;
               padding-bottom: 1rem;
-              color: #919191;
+              color: #cdcdcd;
               // margin-left: 350px;
               // margin-top: -50px;
             }
             h3 {
               font-size: 1.3rem;
               padding-bottom: 1rem;
-              color: #919191;
+              color: #cdcdcd;
+
               // margin-left: 250px;
               // margin-top: -10px;
             }
     
             p {
               font-size: 1.3rem;
-              color: #919191;
+              color: #cdcdcd;
+
               // margin-left: 350px;
     
     

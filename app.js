@@ -68,7 +68,6 @@ contact.addEventListener("click", function (e) {
 
   });
 
-// gsap.from('.under',{y:'-100%',ease:'bounce'})
   const tl = gsap.timeline({
     default:{
     }
@@ -78,7 +77,7 @@ contact.addEventListener("click", function (e) {
   tl.from('.under',{y:'-300%', x:'-400px', duration:3,})
 
  
-
+console.log('hola');
 
 
  

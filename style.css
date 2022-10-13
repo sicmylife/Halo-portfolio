@@ -70,8 +70,8 @@ body {
   opacity: 0;
 }
 .container .dot1 {
-  -webkit-animation: animation 4.1s linear;
-          animation: animation 4.1s linear;
+  -webkit-animation: animation 1s linear;
+          animation: animation 1s linear;
 }
 @-webkit-keyframes animation {
   0% {
@@ -80,7 +80,7 @@ body {
   }
   100% {
     opacity: 0;
-    transform: scale(400);
+    transform: scale(200);
   }
 }
 @keyframes animation {
@@ -90,7 +90,7 @@ body {
   }
   100% {
     opacity: 0;
-    transform: scale(400);
+    transform: scale(200);
   }
 }
 .container .name {
@@ -1054,9 +1054,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("./images/Ellipseblanca.png");
     background-position: center;
-    background-color: #1e1e1e;
     z-index: 100;
     opacity: 1;
     color: #fff;
@@ -1067,7 +1065,7 @@ body {
     -webkit-animation: about 0.1s ease-in forwards;
             animation: about 0.1s ease-in forwards;
     opacity: 0;
-    height: 100vh;
+    background-color: #707070;
   }
   .container .overlay .overlay-contact .phone {
     display: flex;
@@ -1124,6 +1122,7 @@ body {
     z-index: 100;
     opacity: 1;
     color: rgb(164, 162, 162);
+    background-color: #707070;
   }
   .container .overlay2 .overlay-about .main-about-me .info h2 {
     font-size: 8rem;
@@ -1146,16 +1145,16 @@ body {
     font-size: 3rem;
     font-weight: 900;
     padding-bottom: 1rem;
-    color: #919191;
+    color: #cdcdcd;
   }
   .container .overlay2 .overlay-about .main-about-me .info-about h3 {
     font-size: 1.3rem;
     padding-bottom: 1rem;
-    color: #919191;
+    color: #cdcdcd;
   }
   .container .overlay2 .overlay-about .main-about-me .info-about p {
     font-size: 1.3rem;
-    color: #919191;
+    color: #cdcdcd;
   }
   .container .overlay2 .overlay-about .main-about-me .tech {
     position: absolute;
