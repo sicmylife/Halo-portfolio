@@ -74,9 +74,9 @@ contact.addEventListener("click", function (e) {
     
   })
 
-  tl.to('.intro',{x:-2000,x:1000,delay:1, stagger: .2,})
-  tl.to('.intro',{x:'-2000', duration:.4,})
+  tl.to('.intro',{x:-2000,delay:1, stagger: .2,})
   tl.to('.intro',{x:'-2000', duration:.3,})
+  tl.to('.intro',{x:'-2000', duration:.4,})
   // tl.from('.zombi',{y:'2000%', })
   tl.from('.under',{y:'-300%', x:'-300px', duration:3,})
 

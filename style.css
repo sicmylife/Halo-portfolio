@@ -768,6 +768,35 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .container .mobile {
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    content: "";
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #20e400 transparent;
+    -webkit-animation: mobile infinite 5s linear;
+            animation: mobile infinite 5s linear;
+  }
+  @-webkit-keyframes mobile {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes mobile {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   .container .logo {
     position: block;
     top: 30px;
