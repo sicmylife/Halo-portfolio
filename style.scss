@@ -917,14 +917,14 @@ body {
     // height: 100vh;
 .mobile{
   position: absolute;
-  top: 200px;
-  left: 80px;
+  top: 250px;
+  left: 65px;
   content: "";
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  border: 1px solid;
-  border-color:  #20e400 transparent ;
+  border: 20px solid;
+  border-color:  #404040 transparent ;
   animation: mobile infinite 5s linear;
 }
 
