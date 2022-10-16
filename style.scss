@@ -41,31 +41,45 @@ body {
   background-size: 2000px;
   overflow: hidden;
 
+  .intro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right:1px solid #20e400;
+
+  }
+
 .intro-overlay{
-  position: fixed;
-  top: 0;
+ 
   left: 0;
-  background-color: #20e400;
-  width: 45%;
+  // background-color: #20e400;
+  width: 25%;
   height: 100%;
   z-index: 1001;
 }
 
+
 .intro-overlay2{
-  position: fixed;
-  top: 0;
-  left: 45%;
-  background-color: #20e400;
-  width: 35%;
+ 
+  // background-color: #20e400;
+  width: 50%;
   height: 100%;
   z-index: 1002;
 }
 .intro-overlay3{
-  position: fixed;
-  top: 0;
-  left: 80%;
-  background-color: #20e400;
-  width: 20%;
+
+  // background-color: #20e400;
+
+  width: 75%;
+  height: 100%;
+  z-index: 1003;
+}
+
+.intro-overlay4{
+
+  // background-color: #20e400;
+
+  width: 100%;
   height: 100%;
   z-index: 1000;
 }

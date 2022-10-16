@@ -72,19 +72,26 @@ contact.addEventListener("click", function (e) {
     default:{
     }
     
-  })
+  })   
 
-  tl.to('.intro',{y:-2000,delay:1,duration:1, stagger: .4,})
-  tl.to('.intro',{y:0,duration:1.5, stagger: .2,})
-  tl.to('.intro',{x:'-3000',stagger: .1, })
+  tl.from('.intro',{y:-1300,duration:1,delay:1,tagger: 1 })
+  tl.to('.intro',{x:-1000,duration:1,delay:1,tagger: 1 })
+  tl.to('.intro',{x:0,duration:1, stagger: .6,})
+  tl.to('.intro',{x:'-2000',stagger: .1, })
   // tl.to('.intro',{x:'-3000', })
   // tl.from('.zombi',{y:'2000%', })
   tl.from('.under',{y:'-300%', x:'-300px', duration:3,})
 
  
-  const scene= document.querySelector("#scene");
-
-  const parallax = new Parallax(scene);
+const hoverEffecto =  new hoverEffect({
+    parent: document.querySelector(".zombi"),
+    intensity: 0.2,
+    imagesRatio: 450 / 600,
+    image1: "./images/main.png",
+    image2: "./images/main.png",
+    displacementImage: "./images/distortion.jpeg",
+    hover: true
+});
 
 
  
