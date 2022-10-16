@@ -781,6 +781,32 @@ body {
     -webkit-animation: mobile infinite 5s linear;
             animation: mobile infinite 5s linear;
   }
+  .container .intro {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    border-right: 1px solid #20e400;
+  }
+  .container .intro-overlay {
+    width: 10%;
+    height: 100%;
+    z-index: 1001;
+  }
+  .container .intro-overlay2 {
+    width: 20%;
+    height: 100%;
+    z-index: 1002;
+  }
+  .container .intro-overlay3 {
+    width: 30%;
+    height: 100%;
+    z-index: 1003;
+  }
+  .container .intro-overlay4 {
+    width: 40%;
+    height: 100%;
+    z-index: 1000;
+  }
   @-webkit-keyframes mobile {
     0% {
       transform: rotate(0deg);
