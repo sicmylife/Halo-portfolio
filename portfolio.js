@@ -1,4 +1,5 @@
 
+const text = new SplitType("#intro");
 
 
     // gsap.registerPlugin(scrollTrigger);
@@ -15,11 +16,14 @@
     
   })
 
-  tl.fromTo(".grid",{opacity:0, y:200,x:100 },{opacity:1, y:0,x:0 ,duration:4})
+  tl.from(".char",{ y:20,stagger:0.05,rotate:20 ,ease:"black.out(1.5)"})
+  tl.to(".intro",{ y:-2000,ease:"black.out(1.5)",duration:1})
+  tl.fromTo(".grid",{opacity:0, y:200},{opacity:1, y:0,x:0 ,duration:2})
 
 const scene= document.querySelector("#scene");
 
 const parallax = new Parallax(scene);
+
 
 
 
