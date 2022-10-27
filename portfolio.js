@@ -16,8 +16,8 @@ const text = new SplitType("#intro");
     
   })
 
-  tl.from(".char",{ y:20,stagger:0.05,rotate:25 ,ease:"black.out(1.5)"})
-  tl.to(".intro",{ y:-2000,ease:"black.out(1.5)",duration:1})
+  tl.from(".char",{ y:130,stagger:0.1 ,ease:"black.out(1.5)"})
+  tl.to(".intro",{ y:-2000,ease:"black.out(1.5)"})
   tl.fromTo(".grid",{opacity:0, y:200},{opacity:1, y:0,x:0 ,duration:2})
 
 const scene= document.querySelector("#scene");
