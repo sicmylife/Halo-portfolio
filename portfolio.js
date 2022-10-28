@@ -1,5 +1,5 @@
 
-const text = new SplitType("#intro");
+
 
 
     // gsap.registerPlugin(scrollTrigger);
@@ -20,9 +20,7 @@ const text = new SplitType("#intro");
   tl.to(".intro",{ y:-2000,ease:"black.out(1.5)"})
   tl.fromTo(".grid",{opacity:0, y:200},{opacity:1, y:0,x:0 ,duration:2})
 
-const scene= document.querySelector("#scene");
 
-const parallax = new Parallax(scene);
 
 
 
