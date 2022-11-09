@@ -80,7 +80,7 @@ contact.addEventListener("click", function (e) {
   tl.to('.intro',{x:'-2000',stagger: .1, })
   // tl.to('.intro',{x:'-3000', })
   // tl.from('.zombi',{y:'2000%', })
-  tl.from('.under',{y:'-300%', x:'-300px', duration:3,})
+  // tl.from('.under',{y:'-300%', x:'-300px', duration:3,})
 
  
 const hoverEffecto =  new hoverEffect({
